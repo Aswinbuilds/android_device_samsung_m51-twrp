@@ -6,3 +6,17 @@
 #
 
 LOCAL_PATH := device/samsung/m51
+
+# define hardware platform
+PRODUCT_PLATFORM := sm6150
+
+# Define Dynamic Partition support
+PRODUCT_BUILD_SUPER_PARTITION := false
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    fastbootd
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
