@@ -4,3 +4,4 @@ ro.adb.secure=0
 ro.debuggable=0
 persist.sys.usb.config=mtp
 ro.boot.dynamic_partitions = true
+ro.boot.usbcontroller = 1d84000.ufshc
